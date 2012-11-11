@@ -16,15 +16,8 @@
 		<folder>css</folder>
 	</file>	
 	<positions>
-		<position>breadcrumb</position>		
-		<position>top-welcome</position>
-		<position>top-home</position>
-		<position>top-menu</position>		
-		<position>wrapper</position>		
-		<position>slider</position>				
-		<position>container-top</position>
-		<position>sidebar-right</position>
-		<position>container-bottom</position>
-		<position>footer</position>
+		<position>breadcrumb</position>
+		<position>top</position>		
+		<position>mainmenu</position>
 	</positions>	
 </extension>

@@ -19,12 +19,16 @@ $app = JFactory::getApplication();
 	</head>
 	<body>
 		<div id="top-welcome">
-			</div>
 			<jdoc:include type="modules" name="top-welcome" />
+			<div id="language-selection">
+					<jdoc:include type="modules" name="language-selection" />
+			</div>
 		</div>
 		<!-- ENDS #TOP-WELCOME-->
 		<div id="wrapper">	
-			<div id="welcome-video"></div>
+			<div id="content">
+				<jdoc:include type="modules" name="main-content" />
+			</div>
 			<jdoc:include type="component" />
 		</div>		
 		<!-- ENDS #WRAPPER-->

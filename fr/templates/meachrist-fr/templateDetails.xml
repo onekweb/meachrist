@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="template">
+	<name>meachrist</name>
+	<creationDate>2012-11-06</creationDate>
+	<author>Mario Onekanda</author>
+	<authorEmail>mario.onekanda@gmail.com</authorEmail>
+	<authorUrl>http://www.onekweb.com</authorUrl>
+	<copyright>Mario Onekanda 2012</copyright>
+	<license>GNU/GPL</license>
+	<version>2.5.7</version>
+	<description>Meachrist</description>
+	<file>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</file>	
+	<positions>
+		<position>breadcrumb</position>
+		<position>top</position>		
+		<position>image-sliders</position>
+
+	</positions>	
+</extension>
