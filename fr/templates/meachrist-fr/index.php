@@ -26,6 +26,7 @@ $app = JFactory::getApplication();
 		<!-- ENDS #TOP-->
 		<div id="wrapper">
 			<div id="container">
+				<jdoc: include type="module" name="main-container" />
 				<div id="image-sliders">
 					<jdoc:include type="module" name="image-sliders" />
 				</div>

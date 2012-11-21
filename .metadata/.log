@@ -346,3 +346,33 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
 	... 22 more
+!SESSION 2012-11-13 18:50:33.914 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-11-13 18:50:51.880
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.core 4 0 2012-11-13 18:51:49.688
+!MESSAGE (Build 3.2.1.201207261642) [ERROR]  Get shell environment failed: 
+
+!ENTRY com.aptana.filesystem.ftp 2 0 2012-11-13 19:12:49.506
+!MESSAGE Server timezone check failed
+!STACK 0
+com.enterprisedt.net.ftp.FTPException: 550 Can't check for file existence
+	at com.enterprisedt.net.ftp.FTPControlSocket.validateReply(FTPControlSocket.java:1257)
+	at com.enterprisedt.net.ftp.FTPClient.modtime(FTPClient.java:4000)
+	at com.aptana.filesystem.ftp.internal.FTPConnectionFileManager.getherServerInfo(FTPConnectionFileManager.java:483)
+	at com.aptana.filesystem.ftp.internal.FTPConnectionFileManager.connect(FTPConnectionFileManager.java:315)
+	at com.aptana.core.io.vfs.BaseConnectionFileManager.testOrConnect(BaseConnectionFileManager.java:971)
+	at com.aptana.core.io.vfs.BaseConnectionFileManager.testOrConnect(BaseConnectionFileManager.java:962)
+	at com.aptana.core.io.vfs.BaseConnectionFileManager.childInfos(BaseConnectionFileManager.java:207)
+	at com.aptana.core.io.efs.VirtualFile.childInfos(VirtualFile.java:69)
+	at com.aptana.ide.ui.io.FileSystemUtils.childInfos(FileSystemUtils.java:127)
+	at com.aptana.ide.ui.io.navigator.FileSystemWorkbenchAdapter.fetchFileSystemChildren(FileSystemWorkbenchAdapter.java:286)
+	at com.aptana.ide.ui.io.navigator.FileSystemWorkbenchAdapter.fetchDeferredChildren(FileSystemWorkbenchAdapter.java:229)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
