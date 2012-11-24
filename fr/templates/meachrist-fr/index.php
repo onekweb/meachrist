@@ -22,17 +22,16 @@ $app = JFactory::getApplication();
 		<div id="top">
 			<jdoc:include type="modules" name="top" />
 			<a href="<?php echo $this->baseurl; ?>"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" class="logo" /></a>
+			
 		</div>
 		<!-- ENDS #TOP-->
 		<div id="wrapper">
-			<div id="container">
-				<jdoc: include type="module" name="main-container" />
+			
 				<div id="image-sliders">
-					<jdoc:include type="module" name="image-sliders" />
-				</div>
-			</div>
-			<!-- ENDS #MENU -->
+					<jdoc:include type="modules" name="sliders" />				
 			<jdoc:include type="component" />
+				</div>
+			<!-- ENDS #MENU -->
 			</div>
 			<!-- ENDS #CONTAINER-->
 		</div>		

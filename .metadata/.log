@@ -376,3 +376,12 @@ com.enterprisedt.net.ftp.FTPException: 550 Can't check for file existence
 	at com.aptana.ide.ui.io.navigator.FileSystemWorkbenchAdapter.fetchDeferredChildren(FileSystemWorkbenchAdapter.java:229)
 	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-11-24 05:41:01.451 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.core 4 0 2012-11-24 05:42:05.296
+!MESSAGE (Build 3.2.1.201207261642) [ERROR]  Get shell environment failed: 

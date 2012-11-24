@@ -18,9 +18,8 @@
 	<positions>
 		<position>breadcrumb</position>
 		<position>top</position>
-		<position>wrapper</position>
-			<position>main-container</position>			
-		<position>image-sliders</position>
+		<position>wrapper</position>		
+		<position>sliders</position>
 
 	</positions>	
 </extension>
