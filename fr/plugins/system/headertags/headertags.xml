@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_HEADERTAGS</name>
+	<author>Conflate</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>(C) 2012 Conflate. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@conflate.nl</authorEmail>
+	<authorUrl>http://www.conflate.nl</authorUrl>
+	<version>3.0</version>
+	<description>PLG_SYSTEM_HEADERTAGS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="headertags">headertags.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="administrator/language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_headertags.ini</language>
+		<language tag="en-GB">en-GB.plg_system_headertags.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="content_area" label="PLG_SYSTEM_HEADERTAGS_CONTENT_AREA" type="list" default="component" description="PLG_SYSTEM_HEADERTAGS_CONTENT_AREA_DESC">
+					<option value="component">PLG_SYSTEM_HEADERTAGS_CONTENT_AREA_COMPONENT</option>
+					<option value="page">PLG_SYSTEM_HEADERTAGS_CONTENT_AREA_PAGE</option>
+				</field>
+			</fieldset>
+			<fieldset name="h1" label="PLG_SYSTEM_HEADERTAGS_H1">
+				<field name="h1_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="1" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h1_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h2" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+				<field name="h1_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="1" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h1_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h2" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+			</fieldset>
+			<fieldset name="h2" label="PLG_SYSTEM_HEADERTAGS_H2">
+				<field name="h2_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="0" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h2_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h3" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+				<field name="h2_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="ul" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h2_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h3" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+			</fieldset>
+			<fieldset name="h3" label="PLG_SYSTEM_HEADERTAGS_H3">
+				<field name="h3_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="0" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h3_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h4" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+				<field name="h3_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="ul" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h3_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h4" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+			</fieldset>
+			<fieldset name="h4" label="PLG_SYSTEM_HEADERTAGS_H4">
+				<field name="h4_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="0" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h4_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h5" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+				<field name="h4_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="ul" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h4_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h5" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+				</field>
+			</fieldset>
+			<fieldset name="h5" label="PLG_SYSTEM_HEADERTAGS_H5">
+				<field name="h5_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="0" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h5_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h6" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h6">H6</option>
+				</field>
+				<field name="h5_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="ul" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h5_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h6" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h6">H6</option>
+				</field>
+			</fieldset>
+			<fieldset name="h6" label="PLG_SYSTEM_HEADERTAGS_H6">
+				<field name="h6_mandatory" label="PLG_SYSTEM_HEADERTAGS_MANDATORY" type="radio" default="0" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="h6_mandatory_replace" label="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE" type="list" default="h7" description="PLG_SYSTEM_HEADERTAGS_MANDATORY_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h7">H7</option>
+				</field>
+				<field name="h6_limit" label="PLG_SYSTEM_HEADERTAGS_LIMIT" type="list" default="ul" description="PLG_SYSTEM_HEADERTAGS_LIMIT_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="ul">PLG_SYSTEM_HEADERTAGS_UNLIMITED</option>
+				</field>
+				<field name="h6_limit_replace" label="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE" type="list" default="h7" description="PLG_SYSTEM_HEADERTAGS_LIMIT_REPLACE_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h7">H7</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+        <server type="collection" priority="1" name="Conflate Extension Updates">http://www.conflate.nl/extensions/updates/conflate.xml</server>
+    </updateservers>
+</extension>

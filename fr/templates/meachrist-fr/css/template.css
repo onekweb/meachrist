@@ -1,4 +1,3 @@
-/* template.css*/
 @charset "UTF-8";
 /*
 The stylesheet is made by Mario Onekanda on ctober 6th 2012
@@ -25,8 +24,7 @@ text-decoration:			none;
 body
 {
 font-family: 				Arial, Helvetica, sans-serif;
-background-repeat: 			repeat-y;	
-background-repeat: 			repeat-x;
+background:					url("../images/bg.png");
 margin:						0;
 padding:					0;		
 }
@@ -57,9 +55,37 @@ width:						470px;
 
 .blog-featured
 {
-display:					none;	
+width:						710px;
+height:						auto;
+margin:						0 auto;
+background:					#fff;
+color:						#000;
+display:					block;
+float:						left;
 }
 
+
+.blog-featured h2
+{
+font-family:				'Jockey One', Arial, Helvetica, sans-serif;
+background: none repeat scroll 0 0 #FEDC02;
+bottom: 					20px;
+height: 					33px;
+padding: 					0;
+width: 						auto;
+font-size: 					1.3em;
+padding-left:				15px;
+margin-top:					0;
+}
+
+.blog-featured p
+{
+
+font-size:					14px;
+font-family: 				Verdana,Arial, Helvetica, sans-serif;
+line-height:				1.1;
+padding-left:				15px;
+}
 /* ---------------------------MAINMENU -----------------------*/
 
 #mainmenu
@@ -129,9 +155,9 @@ display:					none;
 
 #mainmenu li.parent ul li
 {
-left:						 13px;
 margin: 					 0;
 padding: 					 0;
+float:						left;
 }
 
 #mainmenu li.parent ul li a
@@ -139,9 +165,8 @@ padding: 					 0;
 margin:						0;
 padding:					0;	
 border:						none;
-float:						left;
 padding-left:				16px;
-}
+	}
 
 #mainmenu li.parent ul li a:hover
 {
@@ -151,13 +176,12 @@ border:						none;
 /* ---------------------------WRAPPER -----------------------*/
 #wrapper
 {
-width:						100%;
+width:						960px;
 height:						auto;
-margin:						0;
+margin:						0 auto;
 padding:					0;
 display:					block;
-background:					url("../images/bg.png");
-float:						right;
+background:					#fff;
 }
 
 
@@ -171,7 +195,29 @@ margin:					0 auto;
 padding:				0;
 display:				block;
 background:				#fff;	
+float:					left;
 }
+
+.item-page h2
+{
+
+font-family:			'Jockey One', Arial, Helvetica, sans-serif;
+background:				#FEDC02;
+bottom: 				20px;
+height: 				33px;
+padding: 				0;
+width: 					auto;
+font-size: 				1.3em;
+padding-left:			15px;
+}
+.item-page p
+{
+font-size:					14px;
+font-family: 				Verdana,Arial, Helvetica, sans-serif;
+line-height:				1.1;
+padding-left:				15px;	
+}
+	
 
 /* ---------------------------IMAGES SLIDERS-----------------------*/
 
@@ -182,7 +228,111 @@ display: 				block;
 height: 				auto;
 margin: 				0 auto;
 padding: 				0;
-position: 				relative;
-top: 					13px;
+margin-bottom: 			13px;
+margin-top: 			13px;
 width: 					960px;	
+}
+
+/* ---------------------------CONTAINER-----------------------*/
+
+
+
+#container
+{
+width:					960px;
+auto:					auto;
+margin:					0 auto;	
+padding:				auto;
+display:				block;
+background:				#fff;
+}
+
+/* ---------------------------SIDEBAR-----------------------*/
+
+#siderbar
+{
+background: 			#fff;
+float:					right;
+height: 				auto;
+margin:					0;
+padding: 				0;
+width: 					217px;	
+}
+
+#siderbar h2
+{
+font-family:			'Jockey One', Arial, Helvetica, sans-serif;
+background:				#FEDC02;
+bottom: 				20px;
+height: 				33px;
+padding: 				0;
+width: 					auto;
+font-size: 				1.3em;
+padding-left:			15px;
+margin-top:				0;	
+}
+
+/* ---------------------------CONTENT-BOTTOM-----------------------*/
+
+
+#content-bottom
+{
+background:		 		#fff;
+  background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    height: 222px;
+    width: 745px;
+}
+
+.content-bottom-box
+{
+background:  			#fff;
+float: 					left;
+height: 				213px;
+margin-left: 			15px;
+width: 					223px;
+overflow: 				hidden;
+}
+
+.content-bottom-box h2
+{
+ background: 			#FEDC02;
+bottom: 20px;
+font-family: 			'Jockey One',Arial,Helvetica,sans-serif;
+font-size: 				1.3em;
+height: 				33px;
+margin-top: 			0;
+text-align:				center;
+width: 					223px;
+}
+
+/* ---------------------------FOOTER-----------------------*/
+
+#footer
+{
+background: 			#000;
+display: 				block;
+height: 				60px;
+margin: 				0 auto;
+padding: 				0;
+width: 					100%;
+}	
+
+#footer p
+{
+color:					#fff;
+text-align:center;
+font-size:				14px;
+font-family: 			Verdana,Arial, Helvetica, sans-serif;
+padding-top:			18px;
+}
+
+#footer a
+{
+color:					#fff;	
+}
+
+#footer a:hover
+{
+ color:					#fedc02;	
 }

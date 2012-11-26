@@ -385,3 +385,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.aptana.core 4 0 2012-11-24 05:42:05.296
 !MESSAGE (Build 3.2.1.201207261642) [ERROR]  Get shell environment failed: 
+!SESSION 2012-11-24 22:10:56.936 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.core 4 0 2012-11-24 22:12:40.285
+!MESSAGE (Build 3.2.1.201207261642) [ERROR]  Get shell environment failed: 

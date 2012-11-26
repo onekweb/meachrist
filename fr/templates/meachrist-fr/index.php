@@ -12,30 +12,42 @@ $app = JFactory::getApplication();
 <?php echo '<?'; ?>xml version="1.0" encoding="<?php echo $this->_charset ?>"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
-	<head>
+	<head>		
 		<jdoc:include type="head" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/template.js"></script>
-
+	</head>	
 	<body>
 		<div id="top">
 			<jdoc:include type="modules" name="top" />
-			<a href="<?php echo $this->baseurl; ?>"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" class="logo" /></a>
-			
+			<a href="<?php echo $this->baseurl; ?>"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" class="logo" /></a>			
 		</div>
 		<!-- ENDS #TOP-->
 		<div id="wrapper">
-			
 				<div id="image-sliders">
 					<jdoc:include type="modules" name="sliders" />				
-			<jdoc:include type="component" />
 				</div>
-			<!-- ENDS #MENU -->
-			</div>
-			<!-- ENDS #CONTAINER-->
-		</div>		
-		<!-- ENDS #WRAPPER-->
+				<!-- ENDS #IMAGES-SLIDERS-->						
+			<div id="container">
+				<jdoc:include type="component" /><!-- The component for articles-->			
+				<div id="siderbar">
+					
+						<jdoc:include type="modules" name="siderbar" />				
+				</div>
+				<!-- ENDS #SIDERBAR-->
+				<div id="content-bottom">
+						<jdoc:include type="modules" name="content-bottom" />				
+				</div>
+				<!-- ENDS #CONTENT-BOTTOM-->
 		
+			</div>
+				
+		<!-- ENDS #WRAPPER-->
+		</div>				
+				<div id="footer">
+						<jdoc:include type="modules" name="footer" />				
+				</div>
+				<!-- ENDS #CONTENT-BOTTOM-->
 	</body>
 </html>

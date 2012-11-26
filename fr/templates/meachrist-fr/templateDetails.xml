@@ -17,9 +17,11 @@
 	</file>	
 	<positions>
 		<position>breadcrumb</position>
-		<position>top</position>
-		<position>wrapper</position>		
-		<position>sliders</position>
-
+		<position>top</position>		
+		<position>sliders</position>				
+		<position>siderbar</position>
+		<position>content-bottom</position>
+		<position>footer</position>
+	
 	</positions>	
 </extension>
